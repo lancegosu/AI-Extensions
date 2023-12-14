@@ -1,2 +1,2 @@
-# aiXtensions2
+# aiXtensions
 ai extensions on chrome
