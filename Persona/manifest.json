@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Persona",
+  "version": "1.0",
+  "description": "Use AI to transform the language style of your highlighted text.",
+  "permissions": ["storage", "activeTab", "contextMenus"],
+  "icons": {
+    "48": "icon48.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "options_page": "options.html"
+}
