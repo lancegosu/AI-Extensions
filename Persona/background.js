@@ -60,7 +60,6 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
       // Call the function to generate text using GPT-3.5-turbo
       generateTextWithGPT35Turbo(selectedText, messages, (assistantResponse) => {
         stored = assistantResponse;
-        console.log('Assistant response:', assistantResponse);
         openPopup();
       }, apiKey);
     });
