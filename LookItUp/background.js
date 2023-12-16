@@ -28,9 +28,7 @@ function openPopup() {
 // Event listener for context menu item clicks
 chrome.contextMenus.onClicked.addListener((info, tab) => {
   if (info.menuItemId === "defineText") {
-    console.log('Context menu item clicked');
     const selectedText = info.selectionText;
-    console.log('Selected text:', selectedText);
 
     // Check if API key is available
     getApiKey(apiKey => {
@@ -42,7 +40,6 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
       // Generate text using GPT-3.5-turbo
       generateTextWithGPT35Turbo(selectedText, (assistantResponse) => {
         storedDefinition = assistantResponse;
-        console.log('Assistant response:', assistantResponse);
         openPopup();
       }, apiKey);
     });
@@ -83,7 +80,7 @@ async function generateTextWithGPT35Turbo(selectedText, callback, apiKey) {
         'Authorization': `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        model: "gpt-3.5-turbo",
+        model: "gpt-3.5-turbo-1106",
         messages: messages,
       }),
     });
