@@ -59,7 +59,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 
       // Call the function to generate text using GPT-3.5-turbo
       generateTextWithGPT35Turbo(selectedText, messages, (assistantResponse) => {
-        stored = assistantResponse;
+        storedDefinition = assistantResponse;
         openPopup();
       }, apiKey);
     });
@@ -68,7 +68,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 
 // Message listener to handle messages from the pop-up script and options page
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
-  if (message.action === "get") {
+  if (message.action === "getDefinition") {
     sendResponse({ definition: storedDefinition }); // Send the stored transformation to the pop-up script
   } else if (message.action === "getApiKey") {
     // Retrieve the API key from Chrome storage
@@ -104,7 +104,7 @@ async function generateTextWithGPT35Turbo(selectedText, messages, callback, apiK
     if (response.ok) {
       const data = await response.json();
       const assistantResponse = data.choices[0].message.content;
-      callback(assistantResponse); // Callback with the assistant's response
+      callback(assistantResponse);
     } else {
       console.error('API request failed:', response.statusText);
     }
