@@ -38,7 +38,7 @@ function openPopup() {
 }
 
 // Listener for context menu item clicks
-chrome.contextMenus.onClicked.addListener((info, tab) => {
+chrome.contextMenus.onClicked.addListener((info) => {
   const selectedText = info.selectionText;
   const style = info.menuItemId.split("-")[1];
 
