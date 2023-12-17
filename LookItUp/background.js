@@ -26,7 +26,7 @@ function openPopup() {
 }
 
 // Event listener for context menu item clicks
-chrome.contextMenus.onClicked.addListener((info, tab) => {
+chrome.contextMenus.onClicked.addListener((info) => {
   if (info.menuItemId === "defineText") {
     const selectedText = info.selectionText;
 
