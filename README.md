@@ -1,6 +1,6 @@
 # aiXtensions
 
-aiXtensions currently contains two Chrome extensions: LookItUp and Persona, each leveraging OpenAI's GPT-3.5-turbo for text-related tasks.
+aiXtensions currently contains two independent Chrome extensions: LookItUp and Persona, each leveraging OpenAI's GPT-3.5-turbo for text-related tasks.
 
 ## LookItUp
 
