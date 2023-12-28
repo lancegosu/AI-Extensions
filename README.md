@@ -19,9 +19,10 @@ LookItUp allows users to define highlighted text on a webpage using OpenAI's GPT
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/aiXtensions.git
+    git clone https://github.com/lancerai/aiXtensions.git
     cd aiXtensions
     ```
+    - Note: You will only need to clone this repository once to receive both extensions.
 
 2. Load the extensions in Chrome:
     - Open Chrome and go to `chrome://extensions/`.
