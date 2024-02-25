@@ -1,6 +1,6 @@
 # AI Extensions
 
-AI Extensions currently contains two independent Chrome extensions: LookItUp and Persona, each leveraging OpenAI API for text-related tasks.
+AI Extensions currently consists of two independent Chrome extensions: LookItUp and Persona, each leveraging OpenAI API for text-related tasks.
 
 ## LookItUp
 
