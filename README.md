@@ -1,12 +1,12 @@
 # AI Extensions
 
-AI Extensions currently consists of two independent Chrome extensions: LookItUp and Persona, each leveraging OpenAI API for text-related tasks.
+AI Extensions currently consists of two independent Chrome extensions: LookItUp and Persona, each leveraging OpenAI GPT-3.5-turbo for text-related tasks.
 
 ## LookItUp
 
 ### Overview
 
-LookItUp allows users to define highlighted text on a webpage using OpenAI's GPT-3.5-turbo.
+LookItUp allows users to define highlighted text on a webpage.
 
 ### Usage
 
@@ -19,8 +19,8 @@ LookItUp allows users to define highlighted text on a webpage using OpenAI's GPT
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/lancerai/aiXtensions.git
-    cd aiXtensions
+    git clone https://github.com/lancegosu/AI-Extensions.git
+    cd AI-Extensions
     ```
     - Note: You will only need to clone this repository once to receive both extensions.
 
@@ -37,7 +37,7 @@ LookItUp allows users to define highlighted text on a webpage using OpenAI's GPT
 
 ### Overview
 
-Persona transforms highlighted text into different styles of language using OpenAI's GPT-3.5-turbo.
+Persona transforms highlighted text into different styles of language.
 
 ### Usage
 
