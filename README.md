@@ -8,12 +8,6 @@ AI Extensions currently consists of two independent Chrome extensions: LookItUp 
 
 LookItUp allows users to define highlighted text on a webpage.
 
-### Usage
-
-1. Highlight text on a webpage.
-2. Right-click and select "Define Text" from the context menu.
-3. The extension generates a definition using GPT-3.5-turbo and displays it.
-
 ### Installation
 
 1. Clone the repository:
@@ -33,21 +27,27 @@ LookItUp allows users to define highlighted text on a webpage.
     - Open the options page by clicking "Details" on the extensions page and then clicking "Extension options."
     - Enter your OpenAI API key and click "Save."
 
+### Usage
+
+1. Highlight text on a webpage.
+2. Right-click and select "Define Text" from the context menu.
+3. The extension generates a definition using GPT-3.5-turbo and displays it.
+
 ## Persona
 
 ### Overview
 
 Persona transforms highlighted text into different styles of language.
 
+### Installation
+
+Follow the installation steps for LookItUp, as the process is the same for both extensions.
+
 ### Usage
 
 1. Highlight text on a webpage.
 2. Right-click and select a language style from the "Transform" submenu.
 3. The extension transforms the text and displays it.
-
-### Installation
-
-Follow the installation steps for LookItUp, as the process is the same for both extensions.
 
 ## Note
 
